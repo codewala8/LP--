@@ -1,0 +1,25 @@
+def simple_chatbot():
+    print("Welcome to BookNest!")
+    print("Type 'hi', 'help', or 'exit' to begin.")
+
+    while True:
+        user = input("You: ").lower()
+
+        if user == "hi":
+            print("Bot: Hello! How can I help you?")
+        elif user == "help":
+            print("Bot: You can ask about books, orders, or store hours.")
+        elif user == "books":
+            print("Bot: We have fiction, non-fiction, and children’s books.")
+        elif user == "order":
+            print("Bot: Please provide your order number.")
+        elif user == "hours":
+            print("Bot: We are open 9 AM to 7 PM, Monday to Friday.")
+        elif user == "exit":
+            print("Bot: Goodbye!")
+            break
+        else:
+            print("Bot: I don't understand. Try 'help'.")
+
+# Run the chatbot
+simple_chatbot()

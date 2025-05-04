@@ -1,0 +1,17 @@
+def classify_file(importance, frequency):
+    if importance == "high" and frequency == "high":
+        return "Critical File"
+    elif importance == "high":
+        return "Archive File"
+    elif frequency == "high":
+        return "Frequently Used File"
+    else:
+        return "Temporary File"
+
+# Main Program
+print("=== Simple File Classifier ===")
+importance = input("Is the file important? (high/low): ").lower()
+frequency = input("Is it used often? (high/low): ").lower()
+
+category = classify_file(importance, frequency)
+print(f"\nThis file is classified as: {category}")
